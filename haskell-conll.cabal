@@ -15,9 +15,9 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Data.TagLabel
+  exposed-modules:     Data.ConllToken
                  ,     Data.SyntaxTree
-                 ,     Data.Conll
+                 ,     Data.TagLabel
                  ,     Model.UniversalTreebank
 
   build-depends:       base
