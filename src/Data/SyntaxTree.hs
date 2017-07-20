@@ -13,12 +13,6 @@ import           Protolude
 
 type SyntaxtTree cpos fpos ger feats lemma = Tree (ConllToken cpos fpos ger feats lemma)
 
-data ParsedSentence cpos fpos ger feats lemma = ParsedSentence
-       { _rootNode    :: SyntaxtTree cpos fpos ger feats lemma
-       , _indexToNode :: Map Int (SyntaxtTree cpos fpos ger feats lemma)
-       , _headToNode  :: Map Int [SyntaxtTree cpos fpos ger feats lemma] 
-                         -- ^ All relations having as "head" the given index  
-       } deriving(Show,Read,Eq,Generic)
 
 
 createSyntaxTree :: [ConllToken cpos fpos ger feats lemma] 
@@ -32,11 +26,8 @@ createSyntaxTree conllLines = note TheresNoRoot $ listToMaybe (treeFrom 0)
 
 
     headToNode  = fromListWith (++) [ (_tnHead node,[node]) 
-                                    | (i,node) <- reverse $ assocs indexToNode
-                                    ] -- ^ we do not need to "reverse", but that would make
-                                      --   the result order closer to the original
-
-    
+                                    | node <- conllLines
+                                    ]
 
     treeFrom n = let relations = fromMaybe [] $ lookup n headToNode
                             

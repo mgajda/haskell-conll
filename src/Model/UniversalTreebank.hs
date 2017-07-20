@@ -1,3 +1,4 @@
+{-# LANGUAGE DeriveAnyClass #-}
 
 
 module Model.UniversalTreebank where 
