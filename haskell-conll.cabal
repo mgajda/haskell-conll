@@ -5,19 +5,65 @@ version:             0.1.0.0
 homepage:            https://github.com/sigrlami/haskell-conll#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Sergey Bushnyak
+author:              Sergey Bushnyak, Alejandro D.P.
 maintainer:          sergey.bushnyak@sigrlami.eu
 copyright:           Copyright: (c) 2017 Sergey Bushnyak
-category:            Web
+category:            Text
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
-  build-depends:       base >= 4.7 && < 5
+  exposed-modules:     Data.TagLabel
+                 ,     Data.SyntaxTree
+                 ,     Data.Conll
+                 ,     Model.UniversalTreebank
+
+  build-depends:       base
+                     , containers
+                     , pretty-show
+                     , protolude
+                     , split
+                     , text
+
   default-language:    Haskell2010
+
+  default-extensions:          NoImplicitPrelude
+                             , BangPatterns
+                             , BinaryLiterals
+                             , ConstraintKinds
+                             , DataKinds
+                             , DefaultSignatures
+                             , DeriveFunctor
+                             , DeriveGeneric
+                             , DisambiguateRecordFields
+                             , DuplicateRecordFields
+                             , EmptyDataDecls
+                             , FlexibleContexts
+                             , FlexibleInstances
+                             , FunctionalDependencies
+                             , GADTs
+                             , GeneralizedNewtypeDeriving
+                             , LambdaCase
+                             , MonadComprehensions
+                             , MultiParamTypeClasses
+                             , MultiWayIf
+                             , OverloadedStrings
+                             , PartialTypeSignatures
+                             , PatternSynonyms
+                             , RankNTypes
+                             , RecordWildCards
+                             , RecursiveDo
+                             , ScopedTypeVariables
+                             , StandaloneDeriving
+                             , TemplateHaskell
+                             , TupleSections
+                             , TypeFamilies
+                             , TypeInType
+                             , TypeOperators
+                             , TypeSynonymInstances
+
 
 source-repository head
   type:     git
