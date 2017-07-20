@@ -4,7 +4,7 @@ module Data.ConllToken where
 
 
 import           Protolude
-
+import           Control.Lens
 
 
 data ConllToken cpos fpos ger feats lemma = ConllToken
@@ -19,4 +19,21 @@ data ConllToken cpos fpos ger feats lemma = ConllToken
     , _tnHeadProj  :: Text    -- ^ Projective head of current token.
     , _tnRelProj   :: Text    -- ^ Dependency relation to the PHEAD.     
     } deriving (Show, Read, Eq, Ord, Generic, Functor)
+
+
+
+-- | SyntaxErrorCoNLL:  Reason                      LineNumber Culprit
+--     |                 |                             |         |
+--     v                 v                             v         v
+data SyntaxErrorCoNLL = UnkonwnPosTag                 Int       Text 
+                      | UnkwownRelTag                 Int       Text 
+                      | CoulNotParseInteger           Int       Text 
+                      | InvalidNumberOfElementsOnLine Int       Text 
+                      | TheresNoRoot
+                      deriving(Show,Read,Eq,Ord)
+
+
+$(makeLenses ''ConllToken      )
+$(makePrisms ''SyntaxErrorCoNLL)
+
 

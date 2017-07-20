@@ -22,6 +22,7 @@ library
 
   build-depends:       base
                      , containers
+                     , lens
                      , pretty-show
                      , protolude
                      , split
