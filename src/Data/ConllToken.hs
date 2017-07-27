@@ -1,13 +1,14 @@
-
-
 module Data.ConllToken where
-
 
 import           Protolude
 import           Control.Lens
 
+--------------------------------------------------------------------------------
 
-data ConllToken cpos fpos ger feats lemma = ConllToken
+-- | Basic data type to work witn CoNLL data format
+-- 
+data ConllToken cpos fpos ger feats lemma =
+  ConllToken
     { _tnId        :: Int     -- ^ Index number
     , _tnWord      :: Text    -- ^ Parsed word or punctuation symbol
     , _tnLemma     :: lemma   -- ^ Lemma or stem
@@ -20,18 +21,14 @@ data ConllToken cpos fpos ger feats lemma = ConllToken
     , _tnRelProj   :: Text    -- ^ Dependency relation to the PHEAD.     
     } deriving (Show, Read, Eq, Ord, Generic, Functor)
 
-
-
--- | SyntaxErrorCoNLL:  Reason                      LineNumber Culprit
---     |                 |                             |         |
---     v                 v                             v         v
+-- | Describes typical errors when parsing CoNLL from text data
+--   Contains next filelds:  Reason, LineNumber, Culprit
 data SyntaxErrorCoNLL = UnkonwnPosTag                 Int       Text 
                       | UnkwownRelTag                 Int       Text 
                       | CoulNotParseInteger           Int       Text 
                       | InvalidNumberOfElementsOnLine Int       Text 
                       | TheresNoRoot
                       deriving(Show,Read,Eq,Ord)
-
 
 $(makeLenses ''ConllToken      )
 $(makePrisms ''SyntaxErrorCoNLL)
