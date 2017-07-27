@@ -15,7 +15,6 @@ import           Protolude
 type SyntaxtTree cpos fpos ger feats lemma =
   Tree (ConllToken cpos fpos ger feats lemma)
 
-
 -- |
 createSyntaxTree :: [ConllToken cpos fpos ger feats lemma] 
                  -> Either SyntaxErrorCoNLL (SyntaxtTree cpos fpos ger feats lemma)
