@@ -1,18 +1,14 @@
 {-# LANGUAGE DeriveAnyClass #-}
 
-
 module Model.PennTreebank where 
-
-
 
 import           Protolude
 import           Data.TagLabel
 
+--------------------------------------------------------------------------------
 
--------------------------------------------------
 -- | (Penn) Treebank Tag-set 
 --  For documentation see http://www.comp.leeds.ac.uk/amalgam/tagsets/upenn.html
---
 data POS = CC
          | CD
          | ClosePar    (SpelledAs ")"    )
@@ -60,6 +56,7 @@ data POS = CC
          | WP
          | WP_Dollar     (SpelledAs "WP$")
          | WRB
+         | UNKNOWN -- when some unknown string used
          deriving(Show,Read,Eq,Ord,Generic,TagLabel)
 
 

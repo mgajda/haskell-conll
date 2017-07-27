@@ -1,17 +1,14 @@
 {-# LANGUAGE DeriveAnyClass #-}
 
-
 module Model.UniversalTreebank where 
 
 import           Protolude
 import           Data.TagLabel
 
+--------------------------------------------------------------------------------
 
----------------------------------------------
 -- | Tags from Universal Dependencies project
 --   see `http://universaldependencies.org/en/dep/`
-
-
 data REL = Acl                                    -- ^ clausal modifier of noun
          | Acl_Relcl  (SpelledAs "acl:relcl"   )  -- ^ relative clause modifier
          | Advcl                                  -- ^ adverbial clause modifier
@@ -58,6 +55,7 @@ data REL = Acl                                    -- ^ clausal modifier of noun
          | Reparandum                             -- ^ overridden disfluency
          | ROOT                                   -- ^ root
          | Vocative                               -- ^ vocative
-         | Xcomp                                  -- ^ open clausal complement  
+         | Xcomp                                  -- ^ open clausal complement
+         | Unknown                                -- ^ unknown
          deriving(Show,Read,Eq,Ord,Generic,TagLabel)
 
