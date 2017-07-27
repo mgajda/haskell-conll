@@ -1,5 +1,7 @@
 # haskell-conll
 
+[![Build Status](https://travis-ci.com/mgajda/haskell-conll.svg?token=DtSUtnf37TUDy1p4x6fT&branch=master)](https://travis-ci.com/mgajda/haskell-conll)
+
 Set of Basic Types and Primitives that are used for NLP software such as 
 - CoreNLP
 - SyntaxNet
