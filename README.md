@@ -12,5 +12,14 @@ If you're working on custom solutions you can use it also.
 
 Library supports
 
-- [Penn Treebank Tag-set]  (http://www.comp.leeds.ac.uk/amalgam/tagsets/upenn.html)
-- [Universal Dependencies] (http://universaldependencies.org/en/dep/)
+- [Penn Treebank Tag-set](http://www.comp.leeds.ac.uk/amalgam/tagsets/upenn.html)
+- [Universal Dependencies](http://universaldependencies.org/en/dep/)
+
+## Used
+
+This library is used in 
+
+- [SyntaxNet Haskell bindings](https://github.com/mgajda/syntaxnet-haskell/)
+- [CoreNLP Haskell bindings](https://github.com/mgajda/corenlp-haskell/) 
+
+## Acknowledgements
