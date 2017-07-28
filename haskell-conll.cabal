@@ -1,13 +1,13 @@
 name:                haskell-conll
 version:             0.1.0.0
--- synopsis:
--- description:
+synopsis:            Core Types for NLP
+description:         Provides core types to work with CoreNLP, SyntaxNet. Handling CoNLL format and Syntax Trees.
 homepage:            https://github.com/sigrlami/haskell-conll#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Sergey Bushnyak, Alejandro D.P.
+author:              Sergey Bushnyak, Alejandro Duran-Pallares, Michal Gajda
 maintainer:          sergey.bushnyak@sigrlami.eu
-copyright:           Copyright: (c) 2017 Sergey Bushnyak
+copyright:           Copyright: (c) 2017 Sergey Bushnyak, Michal Gajda, Alejandro Duran-Pallares
 category:            Text
 build-type:          Simple
 extra-source-files:  README.md

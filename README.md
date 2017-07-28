@@ -10,18 +10,22 @@ and can be extended for usage with other software.
 
 If you're working on custom solutions you can use it also.
 
-## TreeBanks
+# TreeBanks
 
 Library supports
 
 - [Penn Treebank Tag-set](http://www.comp.leeds.ac.uk/amalgam/tagsets/upenn.html)
 - [Universal Dependencies](http://universaldependencies.org/en/dep/)
 
-## Used
+# Used
 
 This library is used in 
 
 - [SyntaxNet Haskell bindings](https://github.com/mgajda/syntaxnet-haskell/)
 - [CoreNLP Haskell bindings](https://github.com/mgajda/corenlp-haskell/) 
 
-## Acknowledgements
+# Acknowledgements
+
+- [Michał J. Gajda](https://github.com/mgajda)
+- [Alejandro Duran Pallares](https://github.com/vwwv)
+- [Sergey Bushnyak](https://github.com/sigrlami)
