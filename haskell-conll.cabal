@@ -2,7 +2,7 @@ name:                haskell-conll
 version:             0.1.0.0
 synopsis:            Core Types for NLP
 description:         Provides core types to work with CoreNLP, SyntaxNet. Handling CoNLL format and Syntax Trees.
-homepage:            https://github.com/sigrlami/haskell-conll#readme
+homepage:            https://github.com/mgajda/haskell-conll#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Sergey Bushnyak, Alejandro Duran-Pallares, Michal Gajda
@@ -23,7 +23,7 @@ library
                  ,     Model.PennTreebank
                  ,     Model.UniversalTreebank
 
-  build-depends:       base
+  build-depends:       base >= 4.7 && < 5
                      , containers
                      , lens
                      , pretty-show
