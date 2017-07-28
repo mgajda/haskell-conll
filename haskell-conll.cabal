@@ -19,6 +19,7 @@ library
                  ,     Data.ParsedSentence
                  ,     Data.SyntaxTree
                  ,     Data.TagLabel
+                 ,     Model.NerCoreNlp
                  ,     Model.PennTreebank
                  ,     Model.UniversalTreebank
 

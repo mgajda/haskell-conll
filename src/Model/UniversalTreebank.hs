@@ -54,6 +54,7 @@ data REL = Acl                                    -- ^ clausal modifier of noun
          | Punct                                  -- ^ punctuation
          | Reparandum                             -- ^ overridden disfluency
          | ROOT                                   -- ^ root
+         | Root                                   -- ^ root (not main)
          | Vocative                               -- ^ vocative
          | Xcomp                                  -- ^ open clausal complement
          | Unknown                                -- ^ unknown
