@@ -1,5 +1,5 @@
 name:                haskell-conll
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Core Types for NLP
 description:         Provides core types to work with CoreNLP, SyntaxNet. Handling CoNLL format and Syntax Trees.
 homepage:            https://github.com/mgajda/haskell-conll#readme
