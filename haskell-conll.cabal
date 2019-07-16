@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5ac067ea36a5a227a1e5e7b928c9b744bd5ac666be05eca6de5cbd1da424c4a1
+-- hash: 2d78ec279c1a1e2094b108a7c7c25d6ff9d0506a04bf30bef2a10e4ed9bad967
 
 name:                haskell-conll
 version:             0.1.0.1
@@ -12,7 +12,7 @@ synopsis:            Core Types for NLP
 description:         Provides core types to work with CoreNLP, SyntaxNet. Handling CoNLL format and Syntax Trees.
 homepage:            https://github.com/sigrlami/haskell-conll#readme
 bug-reports:         https://github.com/sigrlami/haskell-conll/issues
-license:             BSD3
+license:             MIT
 license-file:        LICENSE
 author:              Michal Gajda,
                      Sergey Bushnyak,
@@ -52,4 +52,4 @@ library
     , split
     , text
   default-language: Haskell2010
-  default-extensions: NoImplicitPrelude BangPatterns BinaryLiterals ConstraintKinds DataKinds DefaultSignatures DeriveFunctor DeriveGeneric DisambiguateRecordFields DuplicateRecordFields EmptyDataDecls FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving LambdaCase MonadComprehensions MultiParamTypeClasses MultiWayIf OverloadedStrings PartialTypeSignatures PatternSynonyms RankNTypes RecordWildCards RecursiveDo ScopedTypeVariables StandaloneDeriving TemplateHaskell TupleSections TypeFamilies TypeInType TypeOperators TypeSynonymInstances
+  default-extensions: NoImplicitPrelude DefaultSignatures OverloadedStrings TemplateHaskell TypeOperators
