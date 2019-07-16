@@ -1,14 +1,13 @@
 # haskell-conll
 
 [![Build Status](https://travis-ci.com/mgajda/haskell-conll.svg?token=DtSUtnf37TUDy1p4x6fT&branch=master)](https://travis-ci.com/mgajda/haskell-conll)
-![Hackage](https://img.shields.io/hackage/v/api-monobank.svg)
+![Hackage](https://img.shields.io/hackage/v/haskell-conll.svg)
 
 This library package provides set of foundational types and primitives that can be used in NLP software.
 Such as:
 
 - [CoreNLP](https://github.com/mgajda/syntaxnet-haskell)
 - [SyntaxNet](https://ai.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html)
-
 
 and can be extended for usage with other software.
 
