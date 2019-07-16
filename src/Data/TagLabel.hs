@@ -1,9 +1,18 @@
-module Data.TagLabel ( module GHC.Generics
-                     , TagLabel(..)
-                     , SpelledAs(..)
-                     , fromLabelText
-                     , toLabelText
-                     ) where
+{-# LANGUAGE KindSignatures #-}
+{-# LANGUAGE DataKinds      #-}
+{-# LANGUAGE TypeSynonymInstances #-}
+{-# LANGUAGE FlexibleInstances #-}
+{-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE ScopedTypeVariables #-}
+
+module Data.TagLabel
+        ( module GHC.Generics
+        , TagLabel(..)
+        , SpelledAs(..)
+        , fromLabelText
+        , toLabelText
+        ) where
 
 import           Data.Char
 import           Data.Map
@@ -72,4 +81,6 @@ instance (TagLabel l1, TagLabel l2)  => TagLabel (Either l1 l2)
 instance (KnownSymbol symbol) => TagLabel (SpelledAs symbol) where
    labelMap = fromList [(toSL $ symbolVal (Proxy :: Proxy symbol),  SymbolProxy)]
 
-data SpelledAs (s :: Symbol) = SymbolProxy deriving(Show,Read,Eq,Ord,Generic)
+data SpelledAs (s :: Symbol) =
+  SymbolProxy
+    deriving(Show, Read, Eq, Ord, Generic)
