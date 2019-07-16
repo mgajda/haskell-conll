@@ -1,0 +1,72 @@
+name: haskell-conll
+version: '0.1.0.1'
+synopsis: Core Types for NLP
+description: Provides core types to work with CoreNLP, SyntaxNet. Handling CoNLL format
+  and Syntax Trees.
+category: Text
+author:
+- Michal Gajda
+- Sergey Bushnyak
+- Alejandro Duran-Pallares
+maintainer: sergey.bushnyak@sigrlami.eu
+copyright:
+- ! 'Copyright: (c) 2017-2019 Michal Gajda, Sergey Bushnyak'
+- Michal Gajda
+- Alejandro Duran-Pallares
+license: BSD3
+github: sigrlami/haskell-conll
+extra-source-files:
+- README.md
+default-extensions:
+- NoImplicitPrelude
+- BangPatterns
+- BinaryLiterals
+- ConstraintKinds
+- DataKinds
+- DefaultSignatures
+- DeriveFunctor
+- DeriveGeneric
+- DisambiguateRecordFields
+- DuplicateRecordFields
+- EmptyDataDecls
+- FlexibleContexts
+- FlexibleInstances
+- FunctionalDependencies
+- GADTs
+- GeneralizedNewtypeDeriving
+- LambdaCase
+- MonadComprehensions
+- MultiParamTypeClasses
+- MultiWayIf
+- OverloadedStrings
+- PartialTypeSignatures
+- PatternSynonyms
+- RankNTypes
+- RecordWildCards
+- RecursiveDo
+- ScopedTypeVariables
+- StandaloneDeriving
+- TemplateHaskell
+- TupleSections
+- TypeFamilies
+- TypeInType
+- TypeOperators
+- TypeSynonymInstances
+dependencies:
+- base >=4.7 && <5
+- containers
+- lens
+- pretty-show
+- protolude
+- split
+- text
+library:
+  source-dirs: src
+  exposed-modules:
+  - Data.ConllToken
+  - Data.ParsedSentence
+  - Data.SyntaxTree
+  - Data.TagLabel
+  - Model.NerCoreNlp
+  - Model.PennTreebank
+  - Model.UniversalTreebank

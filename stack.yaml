@@ -1,8 +1,5 @@
-resolver: lts-11.0
-packages:
-- '.'
+resolver: lts-13.28
+
 extra-deps: []
 
 flags: {}
-
-extra-package-dbs: []
