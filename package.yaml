@@ -1,5 +1,5 @@
 name: haskell-conll
-version: '0.1.0.1'
+version: '0.1.0.2'
 synopsis: Core Types for NLP
 description: Provides core types to work with CoreNLP, SyntaxNet. Handling CoNLL format
   and Syntax Trees.
@@ -10,8 +10,8 @@ author:
 - Alejandro Duran-Pallares
 maintainer: sergey.bushnyak@sigrlami.eu
 copyright:
-- ! 'Copyright: (c) 2017-2019 Michal Gajda, Sergey Bushnyak'
-- Michal Gajda
+- ! 'Copyright: (c) 2017-2019 Michal Gajda'
+- Sergey Bushnyak
 - Alejandro Duran-Pallares
 license: MIT
 github: sigrlami/haskell-conll

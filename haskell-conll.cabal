@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2d78ec279c1a1e2094b108a7c7c25d6ff9d0506a04bf30bef2a10e4ed9bad967
+-- hash: 5431f89d64a75ed03943ea68f3f8f2254df555f5f48c2e63d8b522932e344a52
 
 name:                haskell-conll
 version:             0.1.0.1
@@ -18,8 +18,8 @@ author:              Michal Gajda,
                      Sergey Bushnyak,
                      Alejandro Duran-Pallares
 maintainer:          sergey.bushnyak@sigrlami.eu
-copyright:           Copyright: (c) 2017-2019 Michal Gajda, Sergey Bushnyak,
-                     Michal Gajda,
+copyright:           Copyright: (c) 2017-2019 Michal Gajda,
+                     Sergey Bushnyak,
                      Alejandro Duran-Pallares
 category:            Text
 build-type:          Simple

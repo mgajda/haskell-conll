@@ -1,10 +1,12 @@
 {-# LANGUAGE DeriveAnyClass #-}
+{-# LANGUAGE DeriveGeneric  #-}
 
-module Model.NerCoreNlp where 
+module Model.NerCoreNlp where
 
-import           Protolude
 import           Data.TagLabel
+import           Protolude
 
+--------------------------------------------------------------------------------
 
 {- | Named Entity Recognition (NER) tag set used by `CoreNLP`.
 
@@ -14,24 +16,22 @@ import           Data.TagLabel
 
 -- | CoreNLP's NER tag set:
 
-data NER = O
-         | CARDINAL 
-         | DATE
-         | DURATION
-         | FACILITY 
-         | GPE
-         | LOCATION 
-         | MEASURE
-         | MISC
-         | MONEY
-         | NUMBER
-         | ORDINAL
-         | ORGANIZATION 
-         | PERCENT 
-         | PERSON 
-         | SET
-         | TIME
-         deriving(Show,Eq,Read,Ord,Generic,TagLabel)
-
-
-
+data NER =
+    O
+  | CARDINAL
+  | DATE
+  | DURATION
+  | FACILITY
+  | GPE
+  | LOCATION
+  | MEASURE
+  | MISC
+  | MONEY
+  | NUMBER
+  | ORDINAL
+  | ORGANIZATION
+  | PERCENT
+  | PERSON
+  | SET
+  | TIME
+  deriving(Show, Eq, Read, Ord, Generic, TagLabel)
